@@ -44,7 +44,7 @@
                 </div>
             @endif
             <?php ?>
-                <a href="/logout">Logout</a>
+                <a href="/project/public/front/logout">Logout</a>
                <form action="/project/public/front/add" method="post" enctype="multipart/form-data">
                      {{ csrf_field() }}
                      <?php if(isset($use)){?>

@@ -19,7 +19,6 @@ class CheckLogin
            return $next($request);
         }else{
              return redirect('/front');
-            
         }
         
         

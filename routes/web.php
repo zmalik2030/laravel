@@ -21,10 +21,10 @@ Route::get('/front', 'FrontController@index');
 Route::post('front/add', 'FrontController@add');
 Route::post('front/login', 'FrontController@login');
 
-Route::group(['middleware' => 'check_login'], function () {
+//Route::group(['middleware' => 'check_login'], function () {
     Route::get('front/dashboard', 'FrontController@dashboard');
     Route::get('front/logout', 'FrontController@logout');
-});
+//});
 //Route::get('front/dashboard', 'FrontController@dashboard');
 
 Auth::routes();
