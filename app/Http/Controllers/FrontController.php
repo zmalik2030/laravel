@@ -13,7 +13,7 @@ class FrontController extends Controller
     public function __construct(){
         $this->middleware('check_login')->only('dashbaord');
         $this->middleware('check_login')->only('logout');
-      
+      echo "yes";
         
     }
     
